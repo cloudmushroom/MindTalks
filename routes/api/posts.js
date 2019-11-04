@@ -138,6 +138,8 @@ router.put('/like/:id', auth, async (req, res) => {
 // @route   PUT api/posts/unlike/:id
 // @desc    Like a post
 // @access  Private
+
+//Rada kaze ispravi u DISLIKE da ti ne bi jebala sve po spisku!!!!!!!!1
 router.put('/unlike/:id', auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
