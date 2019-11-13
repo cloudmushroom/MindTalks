@@ -10,19 +10,11 @@ import {
   LOGOUT
 } from './types';
 import setAuthToken from '../utils/setAuthToken';
-<<<<<<< HEAD
-
-=======
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
 // Load User
 export const loadUser = () => async dispatch => {
   if (localStorage.token) {
     setAuthToken(localStorage.token);
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
   try {
     const res = await axios.get('/api/auth');
 
@@ -37,11 +29,7 @@ export const loadUser = () => async dispatch => {
   }
 };
 
-<<<<<<< HEAD
 // Register User
-=======
-//Register User
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
 export const register = ({ name, email, password }) => async dispatch => {
   const config = {
     headers: {
@@ -73,11 +61,7 @@ export const register = ({ name, email, password }) => async dispatch => {
   }
 };
 
-<<<<<<< HEAD
 // Login User
-=======
-//Login User
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
 export const login = (email, password) => async dispatch => {
   const config = {
     headers: {
@@ -109,11 +93,7 @@ export const login = (email, password) => async dispatch => {
   }
 };
 
-<<<<<<< HEAD
 // Logout / Clear Profile
-=======
-//Logout / Clear Profile
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
 export const logout = () => dispatch => {
   dispatch({ type: LOGOUT });
 };

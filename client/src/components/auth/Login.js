@@ -20,10 +20,7 @@ const Login = ({ login, isAuthenticated }) => {
     login(email, password);
   };
 
-<<<<<<< HEAD
   //Redirect if logged in
-=======
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
   if (isAuthenticated) {
     return <Redirect to='/dashboard' />;
   }
@@ -42,10 +39,6 @@ const Login = ({ login, isAuthenticated }) => {
             name='email'
             value={email}
             onChange={e => onChange(e)}
-<<<<<<< HEAD
-=======
-            required
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
           />
         </div>
         <div className='form-group'>
@@ -55,10 +48,6 @@ const Login = ({ login, isAuthenticated }) => {
             name='password'
             value={password}
             onChange={e => onChange(e)}
-<<<<<<< HEAD
-=======
-            minLength='6'
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
           />
         </div>
 
@@ -80,11 +69,4 @@ const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
 });
 
-<<<<<<< HEAD
 export default connect(mapStateToProps, { login })(Login);
-=======
-export default connect(
-  mapStateToProps,
-  { login }
-)(Login);
->>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
