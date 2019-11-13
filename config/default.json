@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://nenad123:archivist23@devconnector-jl3cq.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "bb0abe474d982b2154ff",
+  "githubSecret": "f1f0dba7bad68c84323ee28e22e37fcb7d7502a2"
+}
