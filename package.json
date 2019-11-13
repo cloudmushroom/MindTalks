@@ -18,7 +18,11 @@
     "express-validator": "^6.2.0",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
+<<<<<<< HEAD
     "mongoose": "^5.7.10",
+=======
+    "mongoose": "^5.7.6",
+>>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
     "request": "^2.88.0"
   },
   "devDependencies": {

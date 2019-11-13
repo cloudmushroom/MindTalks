@@ -26,6 +26,10 @@ export default function(state = initialState, action) {
         loading: false,
         user: payload
       };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
       localStorage.setItem('token', payload.token);
@@ -43,7 +47,11 @@ export default function(state = initialState, action) {
       return {
         ...state,
         token: null,
+<<<<<<< HEAD
         isAuthenticated: false,
+=======
+        isAuthenticated: true,
+>>>>>>> 9bba0b417556ee2410ca416e5845c29976d72d53
         loading: false
       };
     default:
