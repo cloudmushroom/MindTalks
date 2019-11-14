@@ -49,7 +49,9 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         </div>
         <div className='form-group'>
           <input
-            type='email'
+            type='text'
+            pattern='[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}'
+            required
             placeholder='Email Address'
             name='email'
             value={email}
